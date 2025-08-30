@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>op.gg-redirector</title>
+    <script type="text/javascript">
+        window.onload = function() {
+            const query = window.location.search;
+            // query : rune?rune=---base64data---
+            // https://~?rune?rune=000000000000
+
+            var baseAddress = "opgg://";
+
+            window.location.href = baseAddress + query;
+            window.close();
+        };
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
